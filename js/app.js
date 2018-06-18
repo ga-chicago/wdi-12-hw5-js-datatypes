@@ -138,6 +138,17 @@ for(let i = 0; i < bondFilms.length; i++) {
 console.log(bondFilmTitles);
 
 
+//Create a new array of Bond Films released in Odd years
+
+const bondOddYearFilms = [];
+
+for(let i = 0; i < bondFilms.length; i++) {
+	if(bondFilms[i].year % 2 === 1) {
+		bondOddYearFilms.push(bondFilms[i]);
+	}
+}
+
+console.log(bondOddYearFilms);
 
 
 

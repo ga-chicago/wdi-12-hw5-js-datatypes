@@ -150,9 +150,18 @@ for(let i = 0; i < bondFilms.length; i++) {
 
 console.log(bondOddYearFilms);
 
+//Determine the gross total of all the films
+let totalGross = 0;
 
+for(let i = 0; i < bondFilms.length; i++){
+	const numberNoCommas = bondFilms[i].gross.replace(/,/g, '');
+	//console.log(numberNoCommas);
+	const numberNoChars = numberNoCommas.replace('$', '');
+	//console.log(numberNoChars);
+	totalGross = totalGross + parseInt(numberNoChars)
+}
 
-
+console.log(totalGross);
 
 
 

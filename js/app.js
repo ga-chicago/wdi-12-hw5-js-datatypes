@@ -51,7 +51,23 @@
       }
     };
 
+// TAKE IT EASY
 
+// 1.
+    const rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'violet'];
+// 2.
+    rainbow[4]
+// 3.
+    const ronClark = {
+      favoriteFood: 'pizza',
+      hobby: 'Dungeons & Dragons',
+      currentLocation: 'Chicago',
+      favoriteDatatype: 'Objects'
+    };
+// 4.
+    ronClark.hobby
+
+    
 
 
 

@@ -165,6 +165,65 @@ console.log(totalGross);
 
 
 
+//Log the movie object that contains the actor with the least number of appearances
+
+
+const emptyObj = {};
+for (let i = 0; i < bondFilms.length; i++) {
+  emptyObj[bondFilms[i].actor] = 0;
+}
+
+
+for(let i = 0; i < bondFilms.length; i++) {
+  for(let key in emptyObj) {
+    if(bondFilms[i].actor == key){
+      emptyObj[key]++;
+    }
+  }
+}
+console.log(emptyObj);
+let leastActor = '';
+let numberOfMovies = 100;
+
+for (let key in emptyObj) {
+  if(emptyObj[key] < numberOfMovies){
+    numberOfMovies = emptyObj[key];
+    leastActor = key;
+  }
+}
+
+for (let i = 0; i < bondFilms.length; i++){
+  if(bondFilms[i].actor === leastActor){
+    console.log(bondFilms[i]);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

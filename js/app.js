@@ -189,7 +189,26 @@ const bondFilms = [
 
     console.log(oddBonds);
 
+// 3.
+    let grossArray = []
+    
 
+      for (let i = 0; i < bondFilms.length; i++) {
+        grossArray.push(bondFilms[i].gross);
+      };
+
+      
+      for (let i = 0; i < grossArray.length; i++) {
+        grossArray[i] = grossArray[i].replace('$-', '');
+      };
+
+        for (let i = 0; i < grossArray.length; i++) {
+        grossArray[i] = parseInt(grossArray[i]);
+      
+
+ console.log(grossArray)
+
+ //Cant get this to work...
 
 
 

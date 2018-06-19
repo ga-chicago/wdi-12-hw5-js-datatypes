@@ -19,20 +19,20 @@ console.log("JS Running!")
 
    //   //Take it Easy
 // Make an array that holds all of the colors of the rainbow.
-const rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+// const rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
 
-// Write code that will access "blue" from the rainbow array.
-console.log(rainbow[4])
+// // Write code that will access "blue" from the rainbow array.
+// console.log(rainbow[4])
 
-// Make an object that is called your name and holds the information about your favorite food, a hobby, the name of the town that you live in currently, and your favorite datatype.
-const Stephanie = {
-  favoriteFood: ["gnocci", "pizza", "cheeseburger"],
-  hobby: 'wreath making',
-  placeOfResidence: "Palatine",
-  favoriteDataType: "Boolean"
-}
-// Write code that will access your hobby from the object that you just created.
-console.log(Stephanie.hobby)
+// // Make an object that is called your name and holds the information about your favorite food, a hobby, the name of the town that you live in currently, and your favorite datatype.
+// const Stephanie = {
+//   favoriteFood: ["gnocci", "pizza", "cheeseburger"],
+//   hobby: 'wreath making',
+//   placeOfResidence: "Palatine",
+//   favoriteDataType: "Boolean"
+// }
+// // Write code that will access your hobby from the object that you just created.
+// console.log(Stephanie.hobby)
 
 
 //   const crazyObject = {
@@ -84,6 +84,30 @@ console.log(Stephanie.hobby)
 
 // //The object the contains the name funkhauser
 // console.log(crazyObject.larry.characters[1].name)
+
+  //  //Object-ception
+//With the following object:
+
+const inception = {
+   reality: {
+       dreamLayer1: {
+           dreamLayer2: {
+               dreamLayer3: {
+                   dreamLayer4: {
+                       dreamLayer5: {
+                           dreamLayer6: {
+                               limbo: "Joseph Gordon Levitt"
+                          }
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
+//Change the value of limbo to null.
+inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6 = null
+console.log(inception)
 
 
 
